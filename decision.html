@@ -1,0 +1,57 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>爱荷华博弈</title>
+<link href="decision.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<div class='introduction'  id='introduction'>
+<p>(1)在你面前的电脑屏幕上，有4张牌。</p>
+
+<p>(2)你需要每次选择一张牌，你可以随意选择。</p>
+
+<p>(3)每次你选择一张牌后，牌的颜色就会发生变化，电脑就会告诉你是否赢钱了。虽然不会告诉你会赢多少，但你自己会找到规律，每次你赢钱，你的总钱数就会增加。</p>
+
+<p>(4)游戏的目的是赢尽可能多的钱，如果你发现你不能赢钱，确保你尽可能地不输钱。</p>
+
+<p>(5)游戏不会告诉你什么时候停止，你要一直继续直到游戏结束。</p>
+
+<p>(6)游戏先借给你2000元作为本钱。最后，将会看到你赢了多少或者输了多少。</p>
+
+<p>(7)电脑并不会让你随机输钱。你每张牌都可能输钱，但是某些牌会比其它牌输的更多。如果你想赢的话，尽量远离这些坏牌。</p>
+	<input type='button' value='开始游戏' id='start'></input>
+</div>
+<div class="container" id='container'>
+	<!-- 放置牌的容器 -->
+	<div class='card_con'>
+		<ul class='card' id='card'>
+			<li id='card1'><img  src='image/card.jpg' /></li>		
+			<li id='card2'><img  src='image/card.jpg' /></li>
+			<li id='card3'><img  src='image/card.jpg' /></li>
+			<li id='card4'><img  src='image/card.jpg' /></li>
+		</ul>
+		<input type='button' value='请选择一张牌' id='again'></input>
+	</div>
+
+	<!-- 放置收益的容器 -->
+	<div class='score' id='score'>
+
+		<div class='left'>
+			<p class='in'>盈利:<span id='in'>0</span></p>
+			<p class='out'>损失:<span id='out'>0</span></p>
+		</div>
+		<div class='right'>
+			<p class='balance'>余额:<span id='balance'>2000</span></p>
+		</div>	
+	</div>
+</div>
+<div class='record' id='record'></div>
+
+
+<script type="text/javascript" src="jquery-1.9.1.js"></script>
+<script type="text/javascript" src="decision.js"></script>
+</body>
+</html>
